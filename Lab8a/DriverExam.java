@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class DriverExam here.
+ * Write a description of class DriverExam here. FIIIIXXXX
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author ENTER THIS SHIIIIZ
+ * @version ME TOOOOO
  */
 public class DriverExam
 {
@@ -13,7 +13,7 @@ public class DriverExam
     public static final int PASSING_GRADE = 15;
     
     // instance variables - replace the example below with your own
-    private String[] driver_answers;
+    private String[] driveAnswers;
     private InputReader inputAnswers;
 
     /**
@@ -22,7 +22,7 @@ public class DriverExam
     public DriverExam()
     {
         // initialise instance variables
-        driver_answers = new String[20];
+        driverAnswers = new String[20];
         inputAnswers = new InputReader();
     }
 
@@ -45,7 +45,7 @@ public class DriverExam
         System.out.println("Thanks for completing the exam!");
     }
     
-    public Boolean checkValidInputs(String answer, int questionNumber) {        
+    public boolean checkValidInputs(String answer, int questionNumber) {        
         for(int choiceIndex = 0; choiceIndex < VALID_INPUTS.length; choiceIndex++) {
             if(answer != null && answer.equals(VALID_INPUTS[choiceIndex])) {
                 System.out.println("Valid answer saved for question " + questionNumber + "!");
@@ -58,7 +58,7 @@ public class DriverExam
     
     public int getTotalCorrectAnswers() {
         int correct = 0;
-        return checkExamAnswers(correct);
+        return countCorrectAnswers(correct); // more explicit name?
     }
     
     public int getTotalIncorrectAnswers() {
@@ -66,9 +66,9 @@ public class DriverExam
         return ANSWERS.length - checkExamAnswers(correct);
     }
     
-    private int checkExamAnswers(int correct) {
+    private int countCorrectAnswers(int correct) {
         for(int index = 0; index < ANSWERS.length; index++) {
-            if(driver_answers[index] != null && driver_answers[index].equals(ANSWERS[index])) {
+            if(driverAnswers[index] != null && driverAnswers[index].equals(ANSWERS[index])) {
                 correct++;
             }
         }
@@ -76,7 +76,7 @@ public class DriverExam
         return correct;
     }
     
-    public Boolean passOrFail() {
+    public boolean passOrFail() {
         if(getTotalCorrectAnswers() >= PASSING_GRADE) {
             return true;
         }
