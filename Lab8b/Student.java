@@ -1,9 +1,10 @@
 
 /**
- * Write a description of class Student here.
+ * Class that describes the fields and methods of a student, including a name, and exams and an
+ * average exam mark.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Vinay Punwani
+ * @version v1.0 Nov 8th, 2016
  */
 public class Student
 {
@@ -11,8 +12,9 @@ public class Student
     public static final int HIGHEST_EXAM_MARK = 100;
     public static final int LOWEST_EXAM_MARK = 0;
     public static final int PASSING_EXAM_MARK = 50;
+    public static final int NUMBER_OF_EXAMS = 10;
     
-    // instance variables - replace the example below with your own
+    // instance variables
     private String name;
     private int[] examMarks;
     private InputReader examMark;
@@ -22,29 +24,41 @@ public class Student
      */
     public Student()
     {
-        // initialise instance variables
-        examMarks = new int[10];
+        // initialise instance variables to default values
+        examMarks = new int[NUMBER_OF_EXAMS];
         examMark = new InputReader();
         name = "";
     }
 
     /**
      * Non-default Constructor for objects of class Student
+     * 
+     * @param name A parameter containing the new student's name
      */
     public Student(String name)
     {
         // initialise instance variables
-        examMarks = new int[10];
+        examMarks = new int[NUMBER_OF_EXAMS];
         examMark = new InputReader();
         setName(name);
     }
     
     //Accessor methods begin
+    /**
+     * Method getName which returns the student's saved name
+     *
+     * @return The return value which is the String of the student's name
+     */
     public String getName() {
         return name;
     }
     
     //Mutator methods begin
+    /**
+     * Method setName which validates and sets a new student name from a passed in parameter
+     *
+     * @param name A parameter String which is the new name of the student
+     */
     public void setName(String name) {
         if(name != null && !name.equals("")) {
             this.name = name;
@@ -53,16 +67,22 @@ public class Student
         }
     }
     
+    /**
+     * Method promptStudentMarks which prompts the user to enter new exam marks for a 
+     * specific student, validates the marks, then adds them to the exam marks array holding
+     * all the marks
+     *
+     */
     public void promptStudentMarks() {
-        int examNumber = 0;
-        
         for(int index = 0; index < examMarks.length; index++) {
-            examNumber = index + 1;
-            System.out.println("Enter a grade for exam " + examNumber);
+            System.out.println("Enter a grade for exam " + (index+1));
             int mark = examMark.readInt();
-            if(checkValidExamMark(mark, examNumber)) {
+            
+            if(checkValidExamMark(mark)) {
+                System.out.println("Valid mark saved for exam " + (index+1));
                 examMarks[index] = mark;
             } else {
+                System.out.println("Invalid mark entered for exam " + (index+1) + "! Try again.");
                 index--;
             }
         }
@@ -70,16 +90,27 @@ public class Student
         System.out.println("Thanks for entering all your marks!");
    }
     
-    public Boolean checkValidExamMark(int mark, int examNumber) {        
-        if(mark >= LOWEST_EXAM_MARK && mark <= HIGHEST_EXAM_MARK) {
-            System.out.println("Valid mark saved for exam " + examNumber);
+    /**
+     * Method checkValidExamMark which verifies that the entered exam mark is valid and
+     * is between the lowest and highest possible exam mark
+     *
+     * @param mark A parameter which holds the value of the entered exam mark
+     * @return The return value which is true if the mark is valid, false otherwise
+     */
+    public Boolean checkValidExamMark(int mark) {        
+        if(mark >= LOWEST_EXAM_MARK && mark <= HIGHEST_EXAM_MARK) {            
             return true;                
         }
         
-        System.out.println("Invalid mark entered for exam " + examNumber + "! Try again.");
         return false;
     }
     
+    /**
+     * Method calculateAverageMark which calculates the average of all exam marks
+     *
+     * @return The return value which is the calculated average of all exam marks
+     * based on values in the exam mark array
+     */
     public double calculateAverageMark() {
         int sumOfMarks = 0;
         
@@ -90,6 +121,12 @@ public class Student
         return sumOfMarks / examMarks.length;
     }
     
+    /**
+     * Method calculateTotalPassedExams which enumerates the total number of exams within
+     * the inputted exam mark array that have passing grades
+     *
+     * @return The return value which is the total number of passed exams from the array
+     */
     public int calculateTotalPassedExams() {
         int passedExamCount = 0;
         
@@ -102,17 +139,30 @@ public class Student
         return passedExamCount;
     }
     
+    /**
+     * Method allPassingMarks which checks whether the student has passed all exams
+     *
+     * @return The return value which is true if the student has passed all the exams
+     * and false otherwise
+     */
     public Boolean allPassingMarks() {
         for(int examIndex = 0; examIndex < examMarks.length; examIndex++) {
             if(examMarks[examIndex] < PASSING_EXAM_MARK) {                
                 return false;
             }
-        }        
+        }      
+        
         return true;
     }
     
-    public static void main(String[] args) {
-        
+    /**
+     * Method main which creates a new student with a name, then prompts the user to
+     * enter exam marks. Then displays relevant student information and exam averages, 
+     * how many exams were passed and whether the student has passed all the exams
+     *
+     * @param args A parameter representing values passed to the main method
+     */
+    public static void main(String[] args) {        
         Student student = new Student("Vinay");
         student.promptStudentMarks();
         System.out.println("Student name: " + student.name);
