@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=FuelGauge()
+comment0.text=\n\ Default\ Constructor\ for\ objects\ of\ class\ FuelGauge\n
+comment1.params=amountOfFuelInLitres
+comment1.target=FuelGauge(int)
+comment1.text=\n\ Non-default\ Constructor\ for\ objects\ of\ class\ FuelGauge\n\ \n\ @param\ amountOfFuelInLitres\ the\ initial\ value\ of\ the\ gauge\ set\ when\ the\ object\n\ is\ instantiated\n
+comment2.params=
+comment2.target=int\ getAmountOfFuelInLitres()
+comment2.text=\n\ Method\ getAmountOfFuelInLitres\ which\ returns\ the\ current\ fuel\ level\ on\ the\ gauge\n\n\ @return\ The\ return\ value,\ an\ int,\ which\ is\ the\ current\ fuel\ level\ in\ litres\n
+comment3.params=amountOfFuelInLitres
+comment3.target=void\ setAmountOfFuel(int)
+comment3.text=\n\ Method\ setAmountOfFuel\ which\ validates\ and\ sets\ a\ new\ fuel\ level\ on\ the\ gauge\n\n\ @param\ amountOfFuelInLitres\ A\ parameter\ containing\ the\ new\ fuel\ level\ in\ litres\n
+comment4.params=
+comment4.target=void\ useFuel()
+comment4.text=\n\ Method\ useFuel\ which\ uses\ fuel\ by\ decreasing\ the\ fuel\ amount\ by\ one\ litre\ on\ each\ call\n\n
+comment5.params=
+comment5.target=void\ addFuel()
+comment5.text=\n\ Method\ addFuel\ which\ adds\ fuel\ by\ increasing\ the\ fuel\ amount\ by\ one\ litre\ on\ each\ call\n\n
+numComments=6

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=RetailItem()
+comment0.text=\n\ Default\ constructor\ for\ objects\ of\ class\ RetailItem,\ no\ params\n
+comment1.params=inputItemDescription\ inputItemPriceInCAD\ inputIsInDemand\ inputNumberOfUnitsInStock
+comment1.target=RetailItem(java.lang.String,\ double,\ boolean,\ int)
+comment1.text=\n\ Non-default\ constructor\ for\ objects\ of\ class\ RetailItem,\ requires\ params\n\ \n\ @param\ inputItemDescription\ Short\ description\ of\ retail\ item\ for\ sale\n\ @param\ inputItemPriceInCAD\ Retail\ price\ of\ item\ in\ Canadian\ dollars\n\ @param\ inputIsInDemand\ Tells\ us\ whether\ or\ not\ the\ item\ is\ in\ demand,\ true\ or\ false\n\ @param\ inputNumberOfUnitsInStock\ How\ many\ physical\ units\ are\ in\ stock\ in\ our\ inventory\n\ \n
+comment2.params=
+comment2.target=double\ getItemPriceInCAD()
+comment2.text=\n\ Method\ getItemPriceInCAD\ which\ returns\ the\ item\ price\ in\ CAD\n\n\ @return\ The\ return\ value\ which\ is\ the\ item\ price\ in\ CAD,\ a\ double\n
+numComments=3

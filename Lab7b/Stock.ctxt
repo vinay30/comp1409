@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Stock()
+comment0.text=\n\ Default\ Constructor\ for\ objects\ of\ class\ Stock\n
+comment1.params=stockSymbol\ sharePrice
+comment1.target=Stock(java.lang.String,\ double)
+comment1.text=\n\ Non-Default\ Constructor\ for\ objects\ of\ class\ Stock\n\n\ @param\ stockSymbol\ A\ parameter\ holding\ the\ new\ stock\ symbol\ string\n\ @param\ sharePrice\ A\ parameter\ holding\ the\ new\ stock\ share\ price\n
+comment2.params=
+comment2.target=java.lang.String\ getStockSymbol()
+comment2.text=\n\ Method\ getStockSymbol\ that\ returns\ the\ stock\ symbol\ string\n\n\ @return\ The\ return\ value\ of\ the\ stock\ symbol\ as\ a\ String\n
+comment3.params=
+comment3.target=double\ getSharePrice()
+comment3.text=\n\ Method\ getSharePrice\ which\ returns\ the\ share\ price\ of\ the\ stock\n\n\ @return\ The\ return\ value\ of\ the\ share\ price\ as\ a\ double\n
+comment4.params=stockSymbol
+comment4.target=void\ setStockSymbol(java.lang.String)
+comment4.text=\n\ Method\ setStockSymbol\ which\ validates\ and\ then\ sets\ the\ value\ of\ the\ stock\n\ symbol\ from\ a\ passed\ in\ parameter\n\n\ @param\ stockSymbol\ A\ parameter\ containing\ the\ new\ stock\ symbol\ string\n
+comment5.params=sharePrice
+comment5.target=void\ setSharePrice(double)
+comment5.text=\n\ Method\ setSharePrice\ which\ validates\ and\ then\ sets\ the\ value\ of\ the\ share\n\ price\ of\ the\ stock\ from\ a\ passed\ in\ parameter\n\n\ @param\ sharePrice\ A\ parameter\ holding\ the\ new\ share\ price\ as\ a\ double\n
+comment6.params=
+comment6.target=void\ displayStockInfo()
+comment6.text=\n\ Method\ displayStockInfo\ which\ displays\ the\ current\ stock\ symbol\n\ and\ share\ price\ from\ the\ object\n\n
+numComments=7

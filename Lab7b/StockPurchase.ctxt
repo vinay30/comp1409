@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=StockPurchase()
+comment0.text=\n\ Default\ Constructor\ for\ objects\ of\ class\ StockPurchase\n
+comment1.params=stock\ numberOfShares
+comment1.target=StockPurchase(Stock,\ int)
+comment1.text=\n\ Non-Default\ Constructor\ for\ objects\ of\ class\ StockPurchase\n\n\ @param\ stock\ A\ parameter\ containing\ a\ new\ stock\ object\ (from\ Stock\ class)\n\ @param\ numberOfShares\ A\ parameter\ containing\ the\ new\ number\ of\ shares\ to\n\ purchase\n
+comment2.params=
+comment2.target=Stock\ getStock()
+comment2.text=\n\ Method\ getStock\ which\ returns\ a\ Stock\ object\n\n\ @return\ The\ return\ value\ of\ the\ stock\ object\n
+comment3.params=
+comment3.target=int\ getNumberOfShares()
+comment3.text=\n\ Method\ getNumberOfShares\ which\ returns\ the\ number\ of\ shares\ that\ will\ be\n\ purchased\ at\ a\ specific\ share\ price\n\n\ @return\ The\ return\ value\ is\ the\ number\ of\ shares\ that\ will\ be\ purchased\n
+comment4.params=stock
+comment4.target=void\ setStock(Stock)
+comment4.text=\n\ Method\ setStock\ which\ validates\ a\ Stock\ object\ parameter\ and\ sets\ the\ value\n\ of\ the\ stock\ field,\ or\ instantiates\ a\ new\ Stock\ object\ and\ assigns\ it\ to\ the\n\ stock\ field.\n\n\ @param\ stock\ A\ parameter\ containing\ the\ Stock\ object\ to\ be\ used\n
+comment5.params=numberOfShares
+comment5.target=void\ setNumberOfShares(int)
+comment5.text=\n\ Method\ setNumberOfShares\ which\ validates\ and\ sets\ the\ number\ of\ shares\n\ to\ be\ purchased\ of\ a\ stock\ at\ the\ specific\ share\ price\n\n\ @param\ numberOfShares\ A\ parameter\ containing\ the\ number\ of\ shares\n\ to\ be\ purchased\ of\ a\ stock\n
+comment6.params=
+comment6.target=double\ getTotalCost()
+comment6.text=\n\ Method\ getTotalCost\ which\ calculates\ and\ returns\ the\ total\ cost\ of\n\ purchasing\ a\ specific\ number\ of\ shares\ of\ a\ particular\ stock\n\n\ @return\ The\ return\ value\ is\ the\ total\ cost\ of\ buying\ the\ stock\ shares\n
+comment7.params=
+comment7.target=void\ displayStockDetails()
+comment7.text=\n\ Method\ displayStockDetails\ which\ displays\ the\ stock\ info\ (symbol\ and\ price),\ as\n\ well\ as\ the\ total\ cost\ of\ buying\ the\ number\ of\ shares\ defined\n\n
+numComments=8

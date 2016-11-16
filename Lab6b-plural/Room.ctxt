@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Room()
+comment0.text=\n\ Default\ Constructor\ for\ objects\ of\ class\ Room\n
+comment1.params=newLengthInFeet\ newWidthInFeet
+comment1.target=Room(double,\ double)
+comment1.text=\n\ Non-default\ Constructor\ for\ objects\ of\ class\ Room\ from\ passed\ in\ parameters\n\ \n\ @param\ newLengthInFeet\ the\ new\ supplied\ room\ length\ in\ feet\n\ @param\ newWidthInFeet\ the\ new\ supplied\ room\ width\ in\ feet\n
+comment2.params=
+comment2.target=double\ getLengthInFeet()
+comment2.text=\n\ Method\ getLengthInFeet\ which\ returns\ the\ length\ of\ the\ room\ in\ feet\n\n\ @return\ The\ return\ value\ which\ is\ the\ length\ of\ the\ room\ in\ feet\n
+comment3.params=
+comment3.target=double\ getWidthInFeet()
+comment3.text=\n\ Method\ getWidthInFeet\ which\ returns\ the\ width\ of\ the\ room\ in\ feet\n\n\ @return\ The\ return\ value\ which\ is\ the\ width\ of\ the\ room\ in\ feet\n
+comment4.params=newLengthInFeet
+comment4.target=void\ setLengthInFeet(double)
+comment4.text=\n\ Method\ setLengthInFeet\ which\ validates\ and\ sets\ the\ new\ length\ of\ the\ room\ in\ feet\ from\ a\ passed\n\ in\ parameter\n\n\ @param\ newLengthInFeet\ A\ double\ parameter\ that\ represents\ the\ length\ of\ the\ room\ in\ feet\n
+comment5.params=newWidthInFeet
+comment5.target=void\ setWidthInFeet(double)
+comment5.text=\n\ Method\ setWidthInFeet\ which\ validates\ and\ sets\ the\ new\ width\ of\ the\ room\ in\ feet\ from\ a\ passed\n\ in\ parameter\n\n\ @param\ newWidthInFeet\ A\ double\ parameter\ that\ represents\ the\ width\ of\ the\ room\ in\ feet\n
+comment6.params=
+comment6.target=double\ calculateArea()
+comment6.text=\n\ Method\ calculateArea\ Calculates\ the\ total\ area\ of\ the\ room\ from\ the\ length\ and\ width\ variables\n\n\ @return\ double\ The\ return\ value\ which\ is\ the\ square\ footage\ of\ the\ room\n
+numComments=7
