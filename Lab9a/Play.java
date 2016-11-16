@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Play here.
+ * Class describing several methods that process various forms of input
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Vinay Punwani
+ * @version v1.0 Nov 15th, 2016
  */
 public class Play
 {
@@ -17,7 +17,7 @@ public class Play
     private InputReader reader;
     
     /**
-     * Constructor for objects of class Play
+     * Default Constructor for objects of class Play
      */
     public Play()
     {
@@ -25,6 +25,11 @@ public class Play
         reader = new InputReader();
     }
 
+    /**
+     * Method stringPlay which scans for keyboard input, then formats the string input and prints the string as many times
+     * as there are characters in the string input
+     *
+     */
     public void stringPlay() {
         System.out.print("Enter a string of variable length: ");
         String inputString = reader.readString();
@@ -41,6 +46,12 @@ public class Play
         }
     }
     
+    /**
+     * Method getMultiplicationTable which scans for two integers, validates them, then prints a multiplication table using
+     * the inputted integers. The values at each position in the table correspond to the product of the row and column index
+     * of the array generated with the inputted integers.
+     *
+     */
     public void getMultiplicationTable() {
         int rowNumber;
         int columnNumber;
@@ -75,6 +86,12 @@ public class Play
         }
     }
     
+    /**
+     * Method isValidInput which takes an integer and determines whether the integer lies within a valid range of integers or not
+     *
+     * @param inputNumber A parameter which contains the integer value to test
+     * @return The return value which is true if the integer is valid, false if it is not valid
+     */
     private boolean isValidInput(int inputNumber) {
         if(inputNumber >= MIN_TABLE_DIMENSION && inputNumber <= MAX_TABLE_DIMENSION) {            
             return true;
@@ -83,6 +100,11 @@ public class Play
         }
     }
     
+    /**
+     * Method main which is run when the program starts and which calls other methods
+     *
+     * @param args A parameter which contains the arguments passed to the main method
+     */
     public static void main(String[] args) {
         Play newGame = new Play();
         newGame.stringPlay();

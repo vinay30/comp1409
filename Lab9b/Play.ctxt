@@ -1,15 +1,20 @@
 #BlueJ class context
 comment0.params=
 comment0.target=Play()
-comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Play\n
+comment0.text=\n\ Default\ Constructor\ for\ objects\ of\ class\ Play\n
 comment1.params=
 comment1.target=void\ stringPlay()
+comment1.text=\n\ Method\ stringPlay\ which\ scans\ for\ keyboard\ input,\ then\ formats\ the\ string\ input\ and\ prints\ the\ string\ as\ many\ times\n\ as\ there\ are\ characters\ in\ the\ string\ input\n\n
 comment2.params=
 comment2.target=void\ getMultiplicationTable()
+comment2.text=\n\ Method\ getMultiplicationTable\ which\ scans\ for\ two\ integers,\ validates\ them,\ then\ prints\ a\ multiplication\ table\ using\n\ the\ inputted\ integers.\ The\ values\ at\ each\ position\ in\ the\ table\ correspond\ to\ the\ product\ of\ the\ row\ and\ column\ index\n\ of\ the\ array\ generated\ with\ the\ inputted\ integers.\n\n
 comment3.params=inputNumber
 comment3.target=boolean\ isValidInput(int)
+comment3.text=\n\ Method\ isValidInput\ which\ takes\ an\ integer\ and\ determines\ whether\ the\ integer\ lies\ within\ a\ valid\ range\ of\ integers\ or\ not\n\n\ @param\ inputNumber\ A\ parameter\ which\ contains\ the\ integer\ value\ to\ test\n\ @return\ The\ return\ value\ which\ is\ true\ if\ the\ integer\ is\ valid,\ false\ if\ it\ is\ not\ valid\n
 comment4.params=
 comment4.target=void\ guessTheNumber()
+comment4.text=\n\ Method\ guessTheNumber\ which\ generates\ a\ random\ integer\ between\ 1\ and\ 10\ and\ scans\ for\ user\ input\n\ to\ guess\ the\ integer.\ While\ the\ user\ has\ not\ yet\ guessed\ the\ number,\ after\ each\ guess\ the\ user\ is\ told\n\ whether\ the\ number\ is\ higher\ or\ lower\ than\ the\ guess.\ Once\ the\ user\ has\ guessed\ correctly,\n\ the\ number\ of\ guesses\ is\ displayed.\n\n
 comment5.params=args
 comment5.target=void\ main(java.lang.String[])
+comment5.text=\n\ Method\ main\ which\ is\ run\ when\ the\ program\ starts\ and\ which\ calls\ other\ methods\n\n\ @param\ args\ A\ parameter\ which\ contains\ the\ arguments\ passed\ to\ the\ main\ method\n
 numComments=6
