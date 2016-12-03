@@ -1,12 +1,6 @@
-------------------------------------------------------------------------
-This is the project README file. Here, you should describe your project.
-Tell the reader (someone who does not know anything about this project)
-all he/she needs to know. The comments should usually include at least:
-------------------------------------------------------------------------
-
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
-HOW TO START THIS PROJECT:
-AUTHORS:
-USER INSTRUCTIONS:
+PROJECT TITLE: Purchase and Rental Shopping Cart
+PURPOSE OF PROJECT: Track items rented or purchased by a customer
+VERSION or DATE: v2.0 Dec 2nd, 2016
+HOW TO START THIS PROJECT: n/a
+AUTHORS: Vinay Punwani
+USER INSTRUCTIONS: n/a
