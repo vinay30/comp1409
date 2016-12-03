@@ -13,6 +13,7 @@ comment11.target=void\ restock(int)
 comment11.text=\n\ Method\ restock\ which\ adds\ stock\ to\ the\ total\ inventory\ quantity\ of\ the\ item\ after\ the\ parameter\ is\ validated\n\n\ @param\ stockToAdd\ An\ int\ parameter\ containing\ the\ amount\ of\ stock\ to\ add\n
 comment12.params=
 comment12.target=void\ returnItem()
+comment12.text=\n\ Method\ returnItem\ which\ reverses\ the\ actions\ of\ the\ add\ to\ cart\ action\ when\ called.\ This\ is\ used\ when\ a\ customer\ removes\ an\ item\n\ from\ their\ cart\ and\ increments\ stock\ and\ decrements\ quantity\ sold.\n\n
 comment13.params=stockToSell
 comment13.target=void\ sell(int)
 comment13.text=\n\ Method\ sell\ which\ reduces\ stock\ from\ the\ current\ inventory\ and\ increases\ the\ quantity\ of\ items\ sold\ based\ on\ the\ sell\ parameter\n\n\ @param\ stockToSell\ An\ int\ parameter\ containing\ the\ number\ of\ items\ to\ be\ sold\n

@@ -3,7 +3,7 @@
  * Class describing all the information required to create a customer file in the store
  * 
  * @author Vinay Punwani
- * @version v1.0 Nov 15th, 2016
+ * @version v2.0 Dec 2nd, 2016
  */
 public class Customer
 {
@@ -27,39 +27,42 @@ public class Customer
     public Customer()
     {
         // initialise instance variables
-        reader = new InputReader();
-        System.out.println("Create a new customer:");
+        reader = new InputReader();        
         System.out.println("Enter customer data in the order below, separating each term with a comma and space.");
         System.out.println("Data Order: First name, last name, credit card #, address, phone number.");
-        String inputCustomerData = reader.readString();
-        String[] customerDataArray = inputCustomerData.split(", ");
-        if(customerDataArray.length == MIN_DATA_PARTS) {
-            for(int dataIndex = 0; dataIndex < customerDataArray.length; dataIndex++) {
-                String dataPart = customerDataArray[dataIndex];
-                switch(dataIndex) {
-                    case 0:
-                        setFirstName(dataPart);
-                        break;
-                    case 1:
-                        setLastName(dataPart);
-                        break;
-                    case 2:
-                        setCreditCardNumber(dataPart);
-                        break;
-                    case 3:
-                        setAddress(dataPart);
-                        break;
-                    case 4:
-                        setPhoneNumber(dataPart);
-                        break;
-                    default:
-                        System.out.println("Customer data not found! Please try again.");
+        String[] customerDataArray; //variable inside while condition declared above do-while
+        do {
+            System.out.print("Create a new customer:");
+            String inputCustomerData = reader.readString();
+            customerDataArray = inputCustomerData.split(", ");
+            if(customerDataArray.length == MIN_DATA_PARTS) {
+                for(int dataIndex = 0; dataIndex < customerDataArray.length; dataIndex++) {
+                    String dataPart = customerDataArray[dataIndex];
+                    switch(dataIndex) {
+                        case 0:
+                            setFirstName(dataPart);
+                            break;
+                        case 1:
+                            setLastName(dataPart);
+                            break;
+                        case 2:
+                            setCreditCardNumber(dataPart);
+                            break;
+                        case 3:
+                            setAddress(dataPart);
+                            break;
+                        case 4:
+                            setPhoneNumber(dataPart);
+                            break;
+                        default:
+                            System.out.println("Customer data not found! Please try again.");
+                    }
                 }
+                System.out.println("Customer: " + getCustomerName() + " created successfully!");
+            } else {
+                System.out.println("Incomplete customer data! Please try again.");
             }
-            System.out.println("Customer: " + getCustomerName() + " created successfully!");
-        } else {
-            System.out.println("Incomplete customer data! Please try again.");
-        }
+        } while (customerDataArray.length != MIN_DATA_PARTS);        
         System.out.println();
     }
     

@@ -1,6 +1,12 @@
-PROJECT TITLE: Shopping Cart assignment for BCIT Comp 1409
-PURPOSE OF PROJECT: Demonstrate iterators and for-each loops
-VERSION or DATE: Nov 24th, 2016
-HOW TO START THIS PROJECT: n/a
-AUTHORS: Vinay Punwani
-USER INSTRUCTIONS: n/a
+------------------------------------------------------------------------
+This is the project README file. Here, you should describe your project.
+Tell the reader (someone who does not know anything about this project)
+all he/she needs to know. The comments should usually include at least:
+------------------------------------------------------------------------
+
+PROJECT TITLE:
+PURPOSE OF PROJECT:
+VERSION or DATE:
+HOW TO START THIS PROJECT:
+AUTHORS:
+USER INSTRUCTIONS:

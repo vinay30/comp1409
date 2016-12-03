@@ -3,7 +3,7 @@
  * Class describing the fields and methods of an item of inventory that can be rented, bought or sold in a music store.
  * 
  * @author Vinay Punwani
- * @version 1.0 Oct 16, 2016
+ * @version v2.0 Dec 2nd, 2016
  */
 public class MusicalInstrument
 {
@@ -182,9 +182,14 @@ public class MusicalInstrument
         }
     }
     
+    /**
+     * Method returnItem which reverses the actions of the add to cart action when called. This is used when a customer removes an item
+     * from their cart and increments stock and decrements quantity sold.
+     *
+     */
     public void returnItem() {
-        quantityInStock += 1;
-        quantitySold -= 1;
+        quantityInStock++;
+        quantitySold--;
     }
     
     /**

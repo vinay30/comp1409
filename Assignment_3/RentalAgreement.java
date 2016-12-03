@@ -3,7 +3,7 @@
  * Class describing the important information and methods required for a store to rent instruments using an agreement
  * 
  * @author Vinay Punwani
- * @version v1.0 Nov 15th, 2016
+ * @version v2.0 Dec 2nd, 2016
  */
 public class RentalAgreement
 {
@@ -264,34 +264,34 @@ public class RentalAgreement
      *
      */
     public static void main(String args[]) {
-        MusicalInstrument instrument1 = new MusicalInstrument();
-        instrument1.printDetails();
-        Customer customer1 = new Customer(null, null, "", "", "");
-        customer1.printDetails();
-        Customer customer2 = new Customer("jOhN", "sMiTh", "1234567891234567", "123 BCIT St, Burnaby", "1234567890");
-        customer2.printDetails();
-        Date date1 = new Date(1899, 13, 32);
-        date1.displayDate();
-        Date rentDate = new Date(2015, 9, 15);
-        rentDate.displayDate();
-        RentalAgreement rentalAgreement1 = new RentalAgreement(customer2, rentDate, instrument1, 30, 30);
-        System.out.println("Estimated Rental End Date: " + rentalAgreement1.estimatedRentEndDate.getDate());
+//         MusicalInstrument instrument1 = new MusicalInstrument();
+//         instrument1.printDetails();
+//         Customer customer1 = new Customer(null, null, "", "", "");
+//         customer1.printDetails();
+//         Customer customer2 = new Customer("jOhN", "sMiTh", "1234567891234567", "123 BCIT St, Burnaby", "1234567890");
+//         customer2.printDetails();
+//         Date date1 = new Date(1899, 13, 32);
+//         date1.displayDate();
+//         Date rentDate = new Date(2015, 9, 15);
+//         rentDate.displayDate();
+//         RentalAgreement rentalAgreement1 = new RentalAgreement(customer2, rentDate, instrument1, 30, 30);
+//         System.out.println("Estimated Rental End Date: " + rentalAgreement1.estimatedRentEndDate.getDate());
         
         //New code for assignment 3
         Customer customer3 = new Customer();
         MusicalInstrument instrument2 = new MusicalInstrument("Red electric guitar", "RGE333", 1999, 2499);
         Date rentDateGuitar = new Date(2016, 11, 24);
         RentalAgreement rentalAgreement2 = new RentalAgreement(customer3, rentDateGuitar, instrument2, 35, 15);
-        instrument2.restock(5); //Add 5 guitars to stock
+        instrument2.restock(5); //Add 5 red guitars to stock
         MusicalInstrument instrument3 = new MusicalInstrument("Green electric guitar", "GGE999", 999, 1499);
-        instrument3.restock(5);
+        instrument3.restock(5); //Add 5 green guitars to stock
         
         //Create shopping cart object
         ShoppingCart myCart = new ShoppingCart();
         
-        myCart.addToPurchaseCart(instrument2, 3); //Add 3 guitars to purchase cart
-        myCart.addToPurchaseCart(instrument3, 2);
-        myCart.addToRentalCart(rentalAgreement2); //Add guitar rental agreement to cart
+        myCart.addToPurchaseCart(instrument2, 3); //Add 3 red guitars to purchase cart
+        myCart.addToPurchaseCart(instrument3, 2); //Add 2 green guitars to purchase cart
+        myCart.addToRentalCart(rentalAgreement2); //Add red guitar rental agreement to cart
         
         myCart.viewShoppingCart();
         
